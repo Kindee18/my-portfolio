@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Background square -->
+    <rect width="512" height="512" rx="64" fill="#007AFF"/>
+    <!-- Inner square -->
+    <rect x="128" y="128" width="256" height="256" rx="32" fill="white"/>
+    <!-- Letter K -->
+    <path d="M192 160L192 352M192 256L320 160M192 256L320 352" stroke="#007AFF" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
