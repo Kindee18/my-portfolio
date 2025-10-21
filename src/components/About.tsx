@@ -32,20 +32,19 @@ const About = () => {
 							About Me
 						</h2>
 						<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-							I'm a student at ALT School Africa, specializing in cloud
-							engineering with comprehensive hands-on experience in AWS
-							infrastructure and DevOps practices. I have proven expertise with
-							EC2 instances, S3 storage, VPC networking, load balancers, and
-							automated deployment pipelines. Passionate about building scalable
-							cloud solutions and implementing modern DevOps workflows.
+							I'm a Cloud Engineering student at ALT School Africa, passionate
+							about designing scalable, efficient cloud solutions. I’ve gained
+							hands-on experience with AWS infrastructure and DevOps practices,
+							working with tools like EC2, S3, VPCs, and load balancers, and
+							building automated deployment pipelines to streamline workflows.
 						</p>
 						<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-							My technical expertise spans Linux system administration, Ansible
-							automation, CI/CD pipeline development, and Infrastructure as Code
-							with CloudFormation. I excel in Git/GitHub workflows, HTML/CSS
-							development, and am continuously expanding my JavaScript and cloud
-							security skills through practical projects and self-directed
-							learning.
+							My skills include Linux system administration, Ansible automation,
+							and CI/CD pipeline development, along with Infrastructure as Code
+							using CloudFormation. I’m also comfortable working with
+							Git/GitHub, HTML, and CSS, and I’m actively expanding my knowledge
+							in JavaScript and cloud security through practical projects and
+							continuous learning.
 						</p>
 					</motion.div>
 
