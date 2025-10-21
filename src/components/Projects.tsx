@@ -126,20 +126,21 @@ const projects = [
 		link: "https://github.com/Kindee18/my-portfolio.git",
 	},
 	{
-		title: "AWS Infrastructure Learning Journey",
+		title: "Interactive Calculator Application",
 		description:
-			"Hands-on learning experience with core AWS services at ALT School Africa. Built practical skills with EC2 instance management, VPC networking, IAM security policies, and load balancer configuration. Focus on real-world infrastructure deployment scenarios.",
+			"A fully functional calculator web application built with modern web technologies. Features a clean, intuitive interface with support for basic arithmetic operations, decimal calculations, and keyboard input. Demonstrates proficiency in JavaScript logic, DOM manipulation, and responsive design principles.",
 		tech: [
-			"AWS EC2",
-			"AWS VPC",
-			"AWS IAM",
-			"Load Balancer",
-			"AWS S3",
-			"Linux Administration",
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"DOM Manipulation",
+			"Responsive Design",
+			"Event Handling",
+			"Git/GitHub",
 		],
 		image:
-			"https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-		link: "https://github.com/Kindee18/my-aws-projects",
+			"https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/Calculator-App.git",
 	},
 ];
 
