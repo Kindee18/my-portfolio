@@ -24,46 +24,101 @@ const Hero = () => {
 				))}
 			</motion.div>
 			<div className="container mx-auto px-4 relative">
-				<div className="max-w-4xl">
-					<motion.h1
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.5 }}
-						className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
-						Hi, I'm{" "}
-						<span className="text-primary">Kindson Nathaniel Egbule</span>
-					</motion.h1>
+				<div className="grid lg:grid-cols-2 gap-12 items-center">
+					{/* Left Column - Text Content */}
+					<div className="max-w-2xl">
+						<motion.h1
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5 }}
+							className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+							Hi, I'm{" "}
+							<span className="text-primary">Kindson Nathaniel Egbule</span>
+						</motion.h1>
 
-					<motion.p
-						initial={{ opacity: 0, x: -100 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-						className="text-xl text-gray-600 dark:text-gray-300 mb-4">
-						Cloud Engineering Professional
-					</motion.p>
+						<motion.p
+							initial={{ opacity: 0, x: -100 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+							className="text-xl text-gray-600 dark:text-gray-300 mb-4">
+							ALT School Africa Student | Aspiring Cloud Engineer
+						</motion.p>
 
-					<motion.p
-						initial={{ opacity: 0, x: -100 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-						className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-						Specializing in cloud infrastructure, DevOps, and scalable solutions
-					</motion.p>
+						<motion.p
+							initial={{ opacity: 0, x: -100 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+							className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+							Specializing in cloud infrastructure, DevOps, and scalable
+							solutions
+						</motion.p>
 
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.6 }}>
+							<motion.a
+								href="#contact"
+								className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors inline-block"
+								whileHover={{
+									scale: 1.05,
+									boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
+								}}
+								whileTap={{ scale: 0.95 }}>
+								Get in Touch
+							</motion.a>
+						</motion.div>
+					</div>
+
+					{/* Right Column - Profile Picture */}
 					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.6 }}>
-						<motion.a
-							href="#contact"
-							className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors inline-block"
-							whileHover={{
-								scale: 1.05,
-								boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)",
-							}}
-							whileTap={{ scale: 0.95 }}>
-							Get in Touch
-						</motion.a>
+						initial={{ opacity: 0, scale: 0.8 }}
+						animate={{ opacity: 1, scale: 1 }}
+						transition={{ duration: 0.8, delay: 0.4 }}
+						className="flex justify-center lg:justify-center">
+						<div className="relative">
+							<motion.div
+								className="w-96 h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl"
+								whileHover={{ scale: 1.05 }}
+								transition={{ duration: 0.3 }}>
+								<img
+									src="/My picture.jpg"
+									alt="Kindson Nathaniel Egbule"
+									className="w-full h-full object-cover object-top"
+									onError={(e) => {
+										// Fallback if image doesn't exist
+										e.currentTarget.src = `https://ui-avatars.com/api/?name=Kindson+Egbule&size=320&background=3b82f6&color=ffffff&format=svg`;
+									}}
+								/>
+							</motion.div>
+
+							{/* Decorative elements */}
+							<motion.div
+								className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-xl"
+								animate={{
+									scale: [1, 1.2, 1],
+									opacity: [0.5, 0.8, 0.5],
+								}}
+								transition={{
+									duration: 3,
+									repeat: Infinity,
+									repeatType: "reverse",
+								}}
+							/>
+							<motion.div
+								className="absolute -bottom-6 -left-6 w-16 h-16 bg-secondary/30 rounded-full blur-lg"
+								animate={{
+									scale: [1, 1.3, 1],
+									opacity: [0.3, 0.6, 0.3],
+								}}
+								transition={{
+									duration: 4,
+									repeat: Infinity,
+									repeatType: "reverse",
+									delay: 1,
+								}}
+							/>
+						</div>
 					</motion.div>
 				</div>
 			</div>
