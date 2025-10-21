@@ -12,7 +12,6 @@ function App() {
 		<ThemeProvider>
 			<main className="bg-gray-50 dark:bg-dark-primary text-gray-900 dark:text-gray-100 transition-colors duration-200 relative">
 				<AnimatedBackground />
-				<ScrollProgress />
 				<Header />
 				<Hero />
 				<About />
