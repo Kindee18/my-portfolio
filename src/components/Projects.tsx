@@ -142,6 +142,62 @@ const projects = [
 			"https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
 		link: "https://github.com/Kindee18/Calculator-App.git",
 	},
+	{
+		title: "Create S3 Buckets with Terraform",
+		description:
+			"Infrastructure as Code project implementing AWS S3 bucket creation and management using Terraform. Features automated provisioning of S3 buckets with proper configuration, versioning, and security policies. Demonstrates proficiency in Terraform scripting, AWS resource management, and DevOps best practices for cloud infrastructure automation.",
+		tech: [
+			"Terraform",
+			"AWS S3",
+			"Infrastructure as Code",
+			"AWS CLI",
+			"DevOps",
+			"Cloud Infrastructure",
+			"Automation",
+			"Git/GitHub",
+		],
+		image:
+			"https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/create-s3-buckets-terraform",
+	},
+	{
+		title: "Deploy an App with Docker",
+		description:
+			"Containerization project demonstrating application deployment using Docker technology. Features complete containerization workflow including Dockerfile creation, image building, container management, and deployment strategies. Showcases modern DevOps practices with container orchestration, portability, and scalable application deployment across different environments.",
+		tech: [
+			"Docker",
+			"Containerization",
+			"Dockerfile",
+			"Container Management",
+			"DevOps",
+			"Application Deployment",
+			"Linux",
+			"Git/GitHub",
+		],
+		image:
+			"https://images.unsplash.com/photo-1605745341112-85968b19335b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/deploy-app-docker",
+	},
+	{
+		title: "Complete Kubernetes Learning Journey",
+		description:
+			"Comprehensive 4-part Kubernetes mastery project covering the entire container orchestration ecosystem. From launching Kubernetes clusters and setting up deployments to creating manifests and deploying backend applications. Demonstrates advanced DevOps skills in container orchestration, cluster management, service discovery, and production-ready Kubernetes deployments.",
+		tech: [
+			"Kubernetes",
+			"Container Orchestration",
+			"Cluster Management",
+			"Kubernetes Manifests",
+			"Service Discovery",
+			"Pod Management",
+			"DevOps",
+			"YAML Configuration",
+			"kubectl",
+			"Linux",
+		],
+		image:
+			"https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/kubernetes-learning-journey",
+	},
 ];
 
 const Projects = () => {
