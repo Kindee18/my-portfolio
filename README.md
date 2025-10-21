@@ -43,15 +43,19 @@ I'm a dedicated student at ALT School Africa, specializing in cloud engineering 
 
 ## 📂 Featured Projects
 
-### 🚀 **Ansible EC2 Deployment**
+> **🚧 Work in Progress**: These projects are currently in development and will be completed shortly. I'm actively working on implementing and documenting these cloud engineering and DevOps solutions as part of my ALT School Africa learning journey.
+> 
+> **🎯 More Projects Coming Soon**: Additional exciting cloud infrastructure and DevOps projects are in the pipeline! Stay tuned for updates as I continue to expand my portfolio with hands-on implementations.
+
+### 🚀 **Ansible EC2 Deployment** _(In Progress)_
 
 Automated EC2 instance provisioning and configuration using Ansible playbooks with proper security groups and networking setup.
 
-### 🏗️ **7 Day DevOps Challenge**
+### 🏗️ **7 Day DevOps Challenge** _(In Progress)_
 
 Comprehensive DevOps learning project covering CI/CD pipelines, infrastructure automation, and monitoring implementation.
 
-### ☁️ **S3 Static Website Hosting**
+### ☁️ **S3 Static Website Hosting** _(In Progress)_
 
 Cloud-based static website deployment using AWS S3 with CloudFront CDN for optimal performance and global distribution.
 
