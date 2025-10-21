@@ -44,7 +44,7 @@ I'm a dedicated student at ALT School Africa, specializing in cloud engineering 
 ## 📂 Featured Projects
 
 > **🚧 Work in Progress**: These projects are currently in development and will be completed shortly. I'm actively working on implementing and documenting these cloud engineering and DevOps solutions as part of my ALT School Africa learning journey.
-> 
+>
 > **🎯 More Projects Coming Soon**: Additional exciting cloud infrastructure and DevOps projects are in the pipeline! Stay tuned for updates as I continue to expand my portfolio with hands-on implementations.
 
 ### 🚀 **Ansible EC2 Deployment** _(In Progress)_
