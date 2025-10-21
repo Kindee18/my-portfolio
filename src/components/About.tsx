@@ -4,6 +4,9 @@ const skills = [
 	"Git/GitHub",
 	"HTML/CSS",
 	"Vibe Coding",
+	"Terraform",
+	"Docker",
+	"Kubernetes",
 	"AWS S3",
 	"Ansible",
 	"AWS EC2",
@@ -15,7 +18,8 @@ const skills = [
 	"AWS CodeDeploy",
 	"CloudFormation",
 	"AWS IAM",
-	"JavaScript",
+	"Container Orchestration",
+	"Infrastructure as Code",
 ];
 
 const About = () => {
@@ -33,18 +37,19 @@ const About = () => {
 						</h2>
 						<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
 							I'm a Cloud Engineering student at ALT School Africa, passionate
-							about designing scalable, efficient cloud solutions. I’ve gained
-							hands-on experience with AWS infrastructure and DevOps practices,
-							working with tools like EC2, S3, VPCs, and load balancers, and
-							building automated deployment pipelines to streamline workflows.
+							about designing scalable, efficient cloud solutions. I've gained
+							hands-on experience with AWS infrastructure and modern DevOps
+							practices, working with containerization technologies like Docker
+							and Kubernetes, and building automated deployment pipelines to
+							streamline workflows.
 						</p>
 						<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-							My skills include Linux system administration, Ansible automation,
-							and CI/CD pipeline development, along with Infrastructure as Code
-							using CloudFormation. I’m also comfortable working with
-							Git/GitHub, HTML, and CSS, and I’m actively expanding my knowledge
-							in JavaScript and cloud security through practical projects and
-							continuous learning.
+							My expertise spans Infrastructure as Code with Terraform and
+							CloudFormation, container orchestration with Kubernetes, Linux
+							system administration, and CI/CD pipeline development. I'm
+							proficient in AWS services including EC2, S3, VPC, and IAM, and
+							skilled in AI-assisted development using Vibe Coding for efficient
+							project creation and modern web development.
 						</p>
 					</motion.div>
 

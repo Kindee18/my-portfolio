@@ -198,6 +198,42 @@ const projects = [
 			"https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
 		link: "https://github.com/Kindee18/kubernetes-learning-journey",
 	},
+	{
+		title: "Build a New App Feature With Claude Code",
+		description:
+			"AI-assisted development project showcasing modern software development using Claude AI for code generation and feature implementation. Demonstrates proficiency in AI-powered development workflows, prompt engineering, and leveraging advanced AI tools to accelerate development cycles while maintaining code quality and best practices.",
+		tech: [
+			"Claude AI",
+			"AI-Assisted Development",
+			"Code Generation",
+			"Prompt Engineering",
+			"Modern Development",
+			"AI/ML Tools",
+			"Software Engineering",
+			"Git/GitHub",
+		],
+		image:
+			"https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/claude-ai-app-feature",
+	},
+	{
+		title: "Build a Mini Spotify with Cursor",
+		description:
+			"AI-powered music streaming application built using Cursor IDE with intelligent code completion and AI assistance. Features music playback, playlist management, and modern UI/UX design. Showcases expertise in AI-enhanced development environments, modern web technologies, and building complex applications with AI pair programming.",
+		tech: [
+			"Cursor IDE",
+			"AI Pair Programming",
+			"Music Streaming",
+			"Web Development",
+			"UI/UX Design",
+			"Modern JavaScript",
+			"AI-Enhanced IDE",
+			"Git/GitHub",
+		],
+		image:
+			"https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/mini-spotify-cursor",
+	},
 ];
 
 const Projects = () => {
