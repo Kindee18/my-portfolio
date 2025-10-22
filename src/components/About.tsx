@@ -11,6 +11,7 @@ const skills = [
 	"Ansible",
 	"AWS EC2",
 	"Linux",
+	"Bash Scripting",
 	"Load Balancer",
 	"AWS VPC",
 	"CI/CD Pipeline",
