@@ -32,7 +32,7 @@ const projects = [
 			"NGINX",
 			"Linux Administration",
 			"HTML/CSS",
-			"JavaScript",
+			"Bash Scripting",
 			"AWS VPC",
 		],
 		image:
