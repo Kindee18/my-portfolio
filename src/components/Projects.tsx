@@ -38,6 +38,8 @@ const projects = [
 		image:
 			"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
 		link: "https://github.com/Kindee18/my-ansible-project",
+		mediumLink:
+			"https://medium.com/@kindsonegbule15/deploy-a-website-on-ec2-instances-with-automation-7235dadbe5e4",
 	},
 	{
 		title: "AWS Portfolio Infrastructure with Load Balancer",
@@ -289,27 +291,52 @@ const Projects = () => {
 											</span>
 										))}
 									</div>
-									<motion.a
-										href={project.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-primary hover:text-primary/80 font-medium inline-flex items-center transition-colors"
-										whileHover={{ x: 5 }}
-										whileTap={{ scale: 0.95 }}>
-										View Project
-										<svg
-											className="w-4 h-4 ml-2"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24">
-											<path
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth={2}
-												d="M17 8l4 4m0 0l-4 4m4-4H3"
-											/>
-										</svg>
-									</motion.a>
+									<div className="flex flex-col sm:flex-row gap-3">
+										<motion.a
+											href={project.link}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="text-primary hover:text-primary/80 font-medium inline-flex items-center transition-colors"
+											whileHover={{ x: 5 }}
+											whileTap={{ scale: 0.95 }}>
+											View Code
+											<svg
+												className="w-4 h-4 ml-2"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24">
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth={2}
+													d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+												/>
+											</svg>
+										</motion.a>
+										{project.mediumLink && (
+											<motion.a
+												href={project.mediumLink}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="text-green-600 hover:text-green-500 font-medium inline-flex items-center transition-colors"
+												whileHover={{ x: 5 }}
+												whileTap={{ scale: 0.95 }}>
+												Read Article
+												<svg
+													className="w-4 h-4 ml-2"
+													fill="none"
+													stroke="currentColor"
+													viewBox="0 0 24 24">
+													<path
+														strokeLinecap="round"
+														strokeLinejoin="round"
+														strokeWidth={2}
+														d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+													/>
+												</svg>
+											</motion.a>
+										)}
+									</div>
 								</div>
 							</motion.div>
 						</Tilt>
