@@ -36,28 +36,31 @@ const projects = [
 			"AWS VPC",
 		],
 		image:
-			"https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+			"https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
 		link: "https://github.com/Kindee18/my-ansible-project",
 		mediumLink:
 			"https://medium.com/@kindsonegbule15/deploy-a-website-on-ec2-instances-with-automation-7235dadbe5e4",
 	},
 	{
-		title: "AWS Portfolio Infrastructure with Load Balancer",
+		title: "AWS Networking Mastery - 11 Hands-On Projects",
 		description:
-			"Production-ready deployment of this portfolio using AWS EC2 instances with Application Load Balancer for high availability. Implementing Infrastructure as Code with Ansible for automated deployment, configuration management, and scaling across multiple availability zones.",
+			"Comprehensive AWS networking course covering 11 essential networking projects designed for learners of all levels. Mastered VPC fundamentals, traffic flow & security, private subnets, VPC resources, connectivity testing, peering, monitoring with Flow Logs, S3 access from VPC, and VPC endpoints. Complete hands-on experience with AWS networking best practices.",
 		tech: [
-			"AWS EC2",
-			"Application Load Balancer",
-			"Ansible",
-			"Infrastructure as Code",
-			"Auto Scaling",
-			"AWS VPC",
+			"Amazon VPC",
+			"AWS Networking",
+			"VPC Traffic Flow",
+			"Private Subnets",
+			"VPC Peering",
+			"VPC Endpoints",
+			"Flow Logs",
 			"Security Groups",
-			"Route 53",
+			"Route Tables",
+			"NAT Gateways",
+			"Internet Gateways",
 		],
 		image:
-			"https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-		link: "https://github.com/Kindee18/my-aws-projects",
+			"https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+		link: "https://github.com/Kindee18/aws-networking-projects",
 	},
 	{
 		title: "Static Website Hosting on Amazon S3",
@@ -159,7 +162,7 @@ const projects = [
 			"Git/GitHub",
 		],
 		image:
-			"https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+			"https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
 		link: "https://github.com/Kindee18/create-s3-buckets-terraform",
 	},
 	{
@@ -197,7 +200,7 @@ const projects = [
 			"Linux",
 		],
 		image:
-			"https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+			"https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
 		link: "https://github.com/Kindee18/kubernetes-learning-journey",
 	},
 	{
