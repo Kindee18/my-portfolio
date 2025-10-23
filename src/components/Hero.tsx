@@ -77,7 +77,7 @@ const Hero = () => {
 						initial={{ opacity: 0, scale: 0.8 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.8, delay: 0.4 }}
-						className="flex justify-center lg:justify-center lg:order-2 order-1 mb-8 lg:mb-0">
+						className="flex justify-center lg:justify-center lg:order-2 order-1 mb-8 lg:mb-0 mt-4 lg:mt-0">
 						<div className="relative">
 							<motion.div
 								className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl"
