@@ -1,27 +1,82 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
-const skills = [
-	"Git/GitHub",
-	"HTML/CSS",
-	"Vibe Coding",
+const groupedSkills: Record<string, string[]> = {
+	"Cloud & Infrastructure": [
+		"AWS EC2",
+		"AWS S3",
+		"AWS VPC",
+		"Load Balancer",
+		"AWS IAM",
+	],
+	"DevOps & Automation": [
+		"Terraform",
+		"Ansible",
+		"CI/CD Pipeline",
+		"AWS CodeBuild",
+		"AWS CodeDeploy",
+		"CloudFormation",
+		"Bash Scripting",
+	],
+	"Containers & Orchestration": [
+		"Docker",
+		"Kubernetes",
+		"Container Orchestration",
+	],
+	"Tools & Languages": ["Git/GitHub", "HTML/CSS", "Linux", "Vibe Coding"],
+};
+
+// Skills to highlight up-front (keeps list short for first view)
+const primarySkills = [
 	"Terraform",
 	"Docker",
 	"Kubernetes",
-	"AWS S3",
-	"Ansible",
 	"AWS EC2",
-	"Linux",
-	"Bash Scripting",
-	"Load Balancer",
-	"AWS VPC",
-	"CI/CD Pipeline",
-	"AWS CodeBuild",
-	"AWS CodeDeploy",
-	"CloudFormation",
-	"AWS IAM",
-	"Container Orchestration",
-	"Infrastructure as Code",
+	"Ansible",
+	"Git/GitHub",
 ];
+
+const SkillsGrouped = () => {
+	const [showAll, setShowAll] = useState(false);
+
+	return (
+		<div className="space-y-4">
+			<div className="flex items-center justify-between">
+				<h4 className="text-lg font-semibold">All skills</h4>
+				<button
+					onClick={() => setShowAll((s) => !s)}
+					className="text-sm text-primary hover:underline">
+					{showAll ? "Show less" : "Show all"}
+				</button>
+			</div>
+
+			{showAll ? (
+				<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+					{Object.entries(groupedSkills).map(([group, items]) => (
+						<div key={group} className="space-y-2">
+							<div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+								{group}
+							</div>
+							<div className="flex flex-wrap gap-2">
+								{items.map((skill) => (
+									<span
+										key={skill}
+										className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-sm rounded-full text-gray-700 dark:text-gray-300">
+										{skill}
+									</span>
+								))}
+							</div>
+						</div>
+					))}
+				</div>
+			) : (
+				<p className="text-sm text-gray-600 dark:text-gray-400">
+					Showing top skills — expand to view all.
+				</p>
+			)}
+		</div>
+	);
+};
 
 const About = () => {
 	return (
@@ -60,21 +115,22 @@ const About = () => {
 						viewport={{ once: true }}
 						className="space-y-6">
 						<h3 className="text-2xl font-bold text-primary">Skills</h3>
-						<div className="grid grid-cols-2 gap-3">
-							{skills.map((skill, index) => (
+						{/* Primary highlights */}
+						<div className="flex flex-wrap gap-3">
+							{primarySkills.map((skill) => (
 								<motion.div
 									key={skill}
-									initial={{ opacity: 0, y: 20 }}
+									initial={{ opacity: 0, y: 10 }}
 									whileInView={{ opacity: 1, y: 0 }}
 									viewport={{ once: true }}
-									transition={{ delay: index * 0.1 }}
-									className="bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-lg text-center">
-									<span className="text-gray-700 dark:text-gray-300 font-medium">
-										{skill}
-									</span>
+									className="bg-primary/10 dark:bg-primary/20 px-4 py-2 rounded-full text-sm font-medium text-primary">
+									{skill}
 								</motion.div>
 							))}
 						</div>
+
+						{/* Show more toggle and grouped skills */}
+						<SkillsGrouped />
 					</motion.div>
 				</div>
 			</div>
