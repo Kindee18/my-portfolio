@@ -46,11 +46,29 @@ const Header = () => {
 							</motion.a>
 						))}
 						<ThemeToggle />
+						<motion.a
+							href="/Kindson_Egbule_Resume.pdf"
+							download
+							target="_blank"
+							rel="noopener noreferrer"
+							className="ml-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium inline-flex items-center"
+							whileHover={{ y: -2 }}
+							whileTap={{ scale: 0.98 }}>
+							Download Resume
+						</motion.a>
 					</nav>
 
 					{/* Mobile Menu Button */}
 					<div className="md:hidden flex items-center space-x-2">
 						<ThemeToggle />
+						<a
+							href="/Kindson_Egbule_Resume.pdf"
+							download
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-sm bg-primary text-white px-3 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium">
+							Resume
+						</a>
 						<button
 							className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
