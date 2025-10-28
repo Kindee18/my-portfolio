@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
@@ -242,6 +243,31 @@ const projects = [
 ];
 
 const Projects = () => {
+	const [showAll, setShowAll] = useState(false);
+
+	// Priority order for featured projects (shown by default)
+	const priorityOrder = [
+		"7 Day DevOps Challenge - Complete CI/CD Pipeline",
+		"Automated EC2 Website Deployment with Ansible",
+		"Create S3 Buckets with Terraform",
+		"Deploy an App with Docker",
+		"Complete Kubernetes Learning Journey",
+		"AWS Networking Mastery - 11 Hands-On Projects",
+	];
+
+	// Build featured projects from the priority list.
+	// Use a map to preserve order and dedupe by title, then limit to the top 6.
+	const featuredMap = new Map<string, (typeof projects)[0]>();
+	for (const title of priorityOrder) {
+		const p = projects.find((p) => p.title === title);
+		if (p && !featuredMap.has(p.title)) featuredMap.set(p.title, p);
+	}
+
+	const featuredProjects = Array.from(featuredMap.values()).slice(0, 6);
+
+	// Show featuredProjects by default, fall back to all when toggled.
+	const displayedProjects = showAll ? projects : featuredProjects;
+
 	return (
 		<section
 			id="projects"
@@ -255,7 +281,7 @@ const Projects = () => {
 					Featured Projects
 				</motion.h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{projects.map((project, index) => (
+					{displayedProjects.map((project, index) => (
 						<Tilt
 							key={project.title}
 							tiltMaxAngleX={8}
@@ -294,6 +320,7 @@ const Projects = () => {
 											</span>
 										))}
 									</div>
+
 									<div className="flex flex-col sm:flex-row gap-3">
 										<motion.a
 											href={project.link}
@@ -345,6 +372,19 @@ const Projects = () => {
 						</Tilt>
 					))}
 				</div>
+
+				{projects.length > featuredProjects.length && (
+					<div className="mt-8 flex justify-center">
+						<button
+							onClick={() => setShowAll((s) => !s)}
+							className="inline-flex items-center px-5 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
+							aria-expanded={showAll ? "true" : "false"}>
+							{showAll
+								? "Show fewer projects"
+								: `Show all projects (${projects.length})`}
+						</button>
+					</div>
+				)}
 			</div>
 		</section>
 	);
