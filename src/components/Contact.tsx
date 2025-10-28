@@ -1,10 +1,21 @@
+/**
+ * File: src/components/Contact.tsx
+ * Description: Contact section with form or contact links.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { motion } from "framer-motion";
 
+/**
+ * Contact component
+ * @returns JSX.Element
+ */
 const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="section-padding bg-gray-50 dark:bg-dark-secondary">
+			className="section-padding bg-gray-50 dark:bg-dark-secondary pattern-overlay">
 			<div className="container mx-auto px-4">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}

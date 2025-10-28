@@ -1,5 +1,16 @@
+/**
+ * File: src/components/Logo.tsx
+ * Description: Site logo component (SVG or text) used in header and footer.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { motion } from "framer-motion";
 
+/**
+ * Logo component
+ * @returns JSX.Element
+ */
 const Logo = () => {
 	return (
 		<motion.div

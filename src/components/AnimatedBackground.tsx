@@ -1,5 +1,16 @@
+/**
+ * File: src/components/AnimatedBackground.tsx
+ * Description: Decorative animated background used on hero or sections.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { motion } from "framer-motion";
 
+/**
+ * AnimatedBackground component
+ * @returns JSX.Element
+ */
 const AnimatedBackground = () => {
 	return (
 		<div className="fixed inset-0 -z-10 overflow-hidden">

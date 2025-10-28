@@ -1,3 +1,11 @@
+/**
+ * File: src/components/Projects.tsx
+ * Description: Featured projects grid with priority-based "Show all" toggle.
+ * Notes: Automatically shows top prioritized projects and allows expanding to view all.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
@@ -242,6 +250,12 @@ const projects = [
 	},
 ];
 
+/**
+ * Projects component
+ * Renders a grid of project cards. Shows a prioritized subset by default with
+ * a single "Show all" toggle to reveal the full list.
+ * @returns JSX.Element
+ */
 const Projects = () => {
 	const [showAll, setShowAll] = useState(false);
 
@@ -268,10 +282,14 @@ const Projects = () => {
 	// Show featuredProjects by default, fall back to all when toggled.
 	const displayedProjects = showAll ? projects : featuredProjects;
 
+	// Debug logs removed for cleanliness
+
+	// Note: The "Show all" button renders once below the grid within this section.
+
 	return (
 		<section
 			id="projects"
-			className="section-padding bg-gray-50 dark:bg-dark-secondary">
+			className="section-padding bg-gray-50 dark:bg-dark-secondary pattern-overlay">
 			<div className="container mx-auto px-4">
 				<motion.h2
 					initial={{ opacity: 0, y: 20 }}
@@ -280,7 +298,9 @@ const Projects = () => {
 					className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
 					Featured Projects
 				</motion.h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div
+					id="projects-grid"
+					className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{displayedProjects.map((project, index) => (
 						<Tilt
 							key={project.title}
@@ -376,9 +396,16 @@ const Projects = () => {
 				{projects.length > featuredProjects.length && (
 					<div className="mt-8 flex justify-center">
 						<button
+							type="button"
 							onClick={() => setShowAll((s) => !s)}
 							className="inline-flex items-center px-5 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
-							aria-expanded={showAll ? "true" : "false"}>
+							aria-controls="projects-grid"
+							aria-label={
+								showAll
+									? "Show fewer projects"
+									: `Show all ${projects.length} projects`
+							}
+							data-testid="projects-show-all-button">
 							{showAll
 								? "Show fewer projects"
 								: `Show all projects (${projects.length})`}

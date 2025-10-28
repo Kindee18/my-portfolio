@@ -1,3 +1,9 @@
+/**
+ * File: src/components/About.tsx
+ * Description: About section with grouped skills and show-more toggle.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -77,6 +83,11 @@ const SkillsGrouped = () => {
 		</div>
 	);
 };
+/**
+ * About component
+ * Shows a short bio and grouped skills with an expandable view.
+ * @returns JSX.Element
+ */
 
 const About = () => {
 	return (

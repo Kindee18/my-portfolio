@@ -1,3 +1,10 @@
+/**
+ * File: src/utils/animations.ts
+ * Description: Shared Framer Motion variants used across components.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { Variants } from "framer-motion";
 
 export const fadeInUp: Variants = {

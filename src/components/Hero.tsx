@@ -1,28 +1,21 @@
+/**
+ * File: src/components/Hero.tsx
+ * Description: Landing hero section including profile image and call to action.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { motion } from "framer-motion";
 
+/**
+ * Hero component
+ * @returns JSX.Element
+ */
 const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="section-padding min-h-screen flex items-center relative overflow-hidden">
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 0.1 }}
-				transition={{ duration: 2 }}
-				className="absolute inset-0 grid grid-cols-4 gap-4 pointer-events-none">
-				{[...Array(16)].map((_, i) => (
-					<motion.div
-						key={i}
-						className="bg-primary/10 dark:bg-primary/5 h-full w-full"
-						initial={{ opacity: 0, scale: 0.5 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{
-							duration: 2,
-							delay: i * 0.1,
-						}}
-					/>
-				))}
-			</motion.div>
+			className="section-padding min-h-screen flex items-center relative overflow-hidden bg-white dark:bg-dark-secondary pattern-overlay">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
 				<div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 					{/* Left Column - Text Content */}

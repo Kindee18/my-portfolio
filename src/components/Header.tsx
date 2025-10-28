@@ -1,9 +1,20 @@
+/**
+ * File: src/components/Header.tsx
+ * Description: Top navigation and actions (resume download, theme toggle).
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 import { scrollToSection } from "../utils/scroll";
 import Logo from "./Logo";
 
+/**
+ * Header component
+ * @returns JSX.Element
+ */
 const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 

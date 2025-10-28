@@ -1,3 +1,10 @@
+/**
+ * File: src/components/ScrollReveal.tsx
+ * Description: Utility components to animate children when they enter the viewport.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
@@ -6,6 +13,12 @@ interface ScrollRevealProps {
 	width?: "fit-content" | "100%";
 }
 
+/**
+ * ScrollReveal
+ * Animates children into view with a vertical reveal.
+ * @param {ScrollRevealProps} props
+ * @returns JSX.Element
+ */
 export const ScrollReveal = ({
 	children,
 	width = "fit-content",

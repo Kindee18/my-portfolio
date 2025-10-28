@@ -1,6 +1,18 @@
+/**
+ * File: src/components/ThemeToggle.tsx
+ * Description: Button to toggle light/dark theme stored in ThemeContext.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { useTheme } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 
+/**
+ * ThemeToggle component
+ * Toggles the global theme between light and dark modes.
+ * @returns JSX.Element
+ */
 const ThemeToggle = () => {
 	const { theme, toggleTheme } = useTheme();
 

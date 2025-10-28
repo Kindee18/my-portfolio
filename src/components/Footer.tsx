@@ -1,8 +1,19 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+/**
+ * File: src/components/Footer.tsx
+ * Description: Site footer with contact and copyright information.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
 
+/**
+ * Footer component
+ * @returns JSX.Element
+ */
 const Footer = () => {
 	const handleEmailClick = async (e: React.MouseEvent) => {
 		e.preventDefault();
@@ -44,7 +55,7 @@ const Footer = () => {
 	];
 
 	return (
-		<footer className="py-12 mt-16 bg-white dark:bg-dark-secondary border-t border-gray-200 dark:border-gray-800">
+		<footer className="py-12 bg-white dark:bg-dark-secondary border-t border-gray-200 dark:border-gray-800 pattern-overlay">
 			<ScrollReveal width="100%">
 				<div className="container mx-auto px-4">
 					<div className="flex flex-col items-center justify-center space-y-6">

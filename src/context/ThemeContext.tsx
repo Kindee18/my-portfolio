@@ -1,4 +1,16 @@
-import { createContext, useContext, useEffect, useState } from "react";
+/**
+ * File: src/context/ThemeContext.tsx
+ * Description: React context for light/dark theme persistence and management.
+ * Author: Kindee18
+ * Date: 2025-10-28
+ */
+import {
+	createContext,
+	useContext,
+	useEffect,
+	useState,
+	ReactNode,
+} from "react";
 
 type Theme = "light" | "dark";
 type ThemeContextType = {
@@ -8,11 +20,16 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+/**
+ * ThemeProvider
+ * Provides theme state and toggler to descendant components.
+ */
+export function ThemeProvider({ children }: { children: ReactNode }) {
 	const [theme, setTheme] = useState<Theme>(() => {
 		if (typeof window !== "undefined") {
 			const savedTheme = localStorage.getItem("theme");
-			if (savedTheme === "dark" || savedTheme === "light") return savedTheme;
+			if (savedTheme === "dark" || savedTheme === "light")
+				return savedTheme as Theme;
 			return window.matchMedia("(prefers-color-scheme: dark)").matches
 				? "dark"
 				: "light";
